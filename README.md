@@ -1,4 +1,4 @@
-# BLAST: Basic Local Alignment Search Tool
+## BLAST: Basic Local Alignment Search Tool
 
 ##### Step 1: Download the Non-redundant (NR) Proteins Database:
 ```console
