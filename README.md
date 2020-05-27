@@ -26,13 +26,10 @@ PSSM = '/home/learning/mrzResearchArena/PSSM'        # Please, set path where PS
 core = 8       										 # numberThread=3000 --> Berkeley Lab # multiprocessing.cpu_count()
 
 ###
-
-
 import multiprocessing
 import time
 import glob
 import os
-
 os.chdir(PSSM)
 
 ###
