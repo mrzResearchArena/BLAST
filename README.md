@@ -9,6 +9,10 @@ Note: The database has 39 segments, initially ~100GB, but ~450GB after extractio
 ```
 
 ##### Step 2: Extract the Non-redundant (NR) Proteins Database:
+```console
+user@machine:~$ gunzip nr.*.tar.gz
+```
+
 ```bash
 for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
     if [ $i -lt 10 ]; then
