@@ -36,8 +36,6 @@ import os
 os.chdir(PSSM)
 
 ###
-
-
 def runPSIBLAST(file):
     try:
         os.system('psiblast -query {} -db {} -out {}.out -num_iterations 3 -out_ascii_pssm {}.pssm -inclusion_ethresh 0.001 -comp_based_stats 0 -num_threads 1'.format(file, database, file, file))
@@ -48,21 +46,15 @@ def runPSIBLAST(file):
     return '{}, is done.'.format(file)
 
 ###
-
-
 begin   = time.time()
 pool    = multiprocessing.Pool(processes=core)
 results = [ pool.apply_async(runPSIBLAST, args=(file,)) for file in glob.glob('*.fasta') ] # for x in range(1, 10)
 
 ###
-
-
 outputs = [result.get() for result in results]
 end = time.time()
 
 ###
-
-
 print(sorted(outputs))
 print()
 print('Time elapsed: {} seconds.'.format(end - begin))
