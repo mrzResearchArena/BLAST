@@ -5,6 +5,6 @@
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 
-Note: The database are 39 Segment, initially ~100GB database but 450GB after extraction.
+Note: The database has 39 segments, initially ~100GB, but ~450GB after extraction.
 ```
 
