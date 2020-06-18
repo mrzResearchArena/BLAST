@@ -27,7 +27,7 @@ done
 ```python
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
 PSSM = '/home/learning/mrzResearchArena/PSSM'        # Please, set path where PSSM directory is located.
-core = 8       										 # multiprocessing.cpu_count()
+core = 8                                             # multiprocessing.cpu_count()
 
 ###
 import multiprocessing
