@@ -25,9 +25,11 @@ done
 
 ##### Step 3: Generate PSSM
 ```python
+###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
 PSSM = '/home/learning/mrzResearchArena/PSSM'        # Please, set path where PSSM directory is located.
 core = 8                                             # multiprocessing.cpu_count()
+###
 
 ###
 import multiprocessing
@@ -35,6 +37,7 @@ import time
 import glob
 import os
 os.chdir(PSSM)
+###
 
 ###
 def runPSIBLAST(file):
@@ -45,20 +48,22 @@ def runPSIBLAST(file):
         return '{}, is error.'.format(file)
 
     return '{}, is done.'.format(file)
+###
 
 ###
 begin   = time.time()
 pool    = multiprocessing.Pool(processes=core)
 results = [ pool.apply_async(runPSIBLAST, args=(file,)) for file in glob.glob('*.fasta') ] # for x in range(1, 10)
+###
 
 ###
 outputs = [result.get() for result in results]
 end = time.time()
+###
 
 ###
 print(sorted(outputs))
 print()
 print('Time elapsed: {} seconds.'.format(end - begin))
-
 ###
 ```
