@@ -2,6 +2,10 @@
 
 I describe the procedure for the PSSM generation from the FASTA sequences.
 
+
+&nbsp
+&nbsp
+
 ##### Step 1: Download the Non-redundant (NR) Proteins Database:
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
@@ -10,7 +14,10 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 Note: The database has 39 segments, and the initial file size is ~100GB but ~450GB after the extraction. The segments and the file size changes frequently.
 ```
 
-##### Step 1: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
+&nbsp
+&nbsp
+
+##### Step 2: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
 
 ```console
 user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
@@ -18,9 +25,10 @@ user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATE
 COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
 ```
 
+&nbsp
+&nbsp
 
-
-##### Step 2: Extract the Non-redundant (NR) Proteins Database:
+##### Step 3: Extract the Non-redundant (NR) Proteins Database:
 ```console
 user@machine:~$ gunzip nr.*.tar.gz
 ```
@@ -35,7 +43,10 @@ for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
 done
 ```
 
-##### Step 3: Generate PSSM
+&nbsp
+&nbsp
+
+##### Step 4: Generate PSSM
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
