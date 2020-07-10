@@ -9,6 +9,10 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 Note: The database has 39 segments, it is initially ~100GB but ~450GB after extraction; the size changes frequently.
 ```
 
+##### Step 1: Download the BLAST Tool:
+Website: https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+
+
 ##### Step 2: Extract the Non-redundant (NR) Proteins Database:
 ```console
 user@machine:~$ gunzip nr.*.tar.gz
