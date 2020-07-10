@@ -1,0 +1,24 @@
+Step 1: Create Database:
+Command: /home/mrz/ncbi-blast-2.10.0+/bin/makeblastdb -in Sequences.txt -dbtype prot -out Pluto -parse_seqids
+
+Generate Files:
+Pluto.pdb
+Pluto.phr
+Pluto.pin
+Pluto.pog
+Pluto.pos
+Pluto.pot
+Pluto.psq
+Pluto.ptf
+Pluto.pto
+
+
+Step 2: Ensure the database existince:
+Command-2: /home/mrz/ncbi-blast-2.10.0+/bin/blastdbcmd -db Pluto -info
+
+
+Step 3: Generate Default BLOSUM-62:
+/home/mrz/ncbi-blast-2.10.0+/bin/psiblast -query Sequences.txt -db Pluto -num_iterations=10 -evalue=0.001 -out psiblastout.txt -out_ascii_pssm PSSM -save_each_pssm
+
+
+Note: It is good for nothing.
