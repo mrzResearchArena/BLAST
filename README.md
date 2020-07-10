@@ -32,6 +32,10 @@ COUTION: The download link may not remain same every time, it will change after 
 
 #### Step 3: Extract the Non-redundant (NR) Proteins Database:
 ```console
+user@machine:~$ tar xvzf nr.*.tar.gz ### If it works, then please don't try the last two.
+```
+
+```console
 user@machine:~$ gunzip nr.*.tar.gz
 ```
 
