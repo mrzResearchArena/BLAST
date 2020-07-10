@@ -3,8 +3,8 @@
 I describe the procedure for the PSSM generation from the FASTA sequences.
 
 
-&nbsp
-&nbsp
+&nbsp;
+&nbsp;
 
 ##### Step 1: Download the Non-redundant (NR) Proteins Database:
 ```console
@@ -14,8 +14,8 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 Note: The database has 39 segments, and the initial file size is ~100GB but ~450GB after the extraction. The segments and the file size changes frequently.
 ```
 
-&nbsp
-&nbsp
+&nbsp;
+&nbsp;
 
 ##### Step 2: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
 
@@ -25,8 +25,8 @@ user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATE
 COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
 ```
 
-&nbsp
-&nbsp
+&nbsp;
+&nbsp;
 
 ##### Step 3: Extract the Non-redundant (NR) Proteins Database:
 ```console
@@ -43,8 +43,8 @@ for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
 done
 ```
 
-&nbsp
-&nbsp
+&nbsp;
+&nbsp;
 
 ##### Step 4: Generate PSSM
 ```python
