@@ -1,5 +1,6 @@
 ## BLAST: Basic Local Alignment Search Tool
-I describe the procedure for the PSSM generation from the FASTA sequences.
+
+<p> I describe the procedure for the PSSM generation from the FASTA sequences. </p>
 
 ##### Step 1: Download the Non-redundant (NR) Proteins Database:
 ```console
@@ -9,7 +10,7 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 Note: The database has 39 segments, it is initially ~100GB but ~450GB after extraction; the size changes frequently.
 ```
 
-##### Step 1: Download the BLAST Tool [Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/):
+##### Step 1: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
 
 ```console
 user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
