@@ -69,7 +69,7 @@ for record in SeqIO.parse(File, 'fasta'):
 &nbsp;
 
 
-#### Step 5 Generate PSSM
+#### Step 5 Generate PSSM:
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
