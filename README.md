@@ -1,4 +1,5 @@
 ## BLAST: Basic Local Alignment Search Tool
+I describe the procedure for the PSSM generation from the FASTA sequences.
 
 ##### Step 1: Download the Non-redundant (NR) Proteins Database:
 ```console
