@@ -88,7 +88,7 @@ os.chdir(PSSM)
 ###
 def runPSIBLAST(file):
     try:
-        os.system('psiblast -query {} -db {} -out {}.out -num_iterations 3 -out_ascii_pssm {}.pssm -inclusion_ethresh 0.001 -comp_based_stats 0 -num_threads 1'.format(file, database, file, file))
+        os.system('/home/learning/ncbi-blast-2.10.1+/bin/psiblast -query {} -db {} -out {}.out -num_iterations 3 -out_ascii_pssm {}.pssm -inclusion_ethresh 0.001 -comp_based_stats 0 -num_threads 1'.format(file, database, file, file))
     except:
         print('PSI-BLAST is error for the sequence {}!'.format(file))
         return '{}, is error.'.format(file)
