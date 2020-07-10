@@ -49,10 +49,27 @@ for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
 done
 ```
 
+#### Step 4: Split FASTAs into Ech Single File:
+
+```python
+File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
+
+from Bio import SeqIO
+
+C= 1
+for record in SeqIO.parse(File, 'fasta'):
+    openFile = open(str(C) + '.fasta', 'w')
+    SeqIO.write(record, openFile, 'fasta')
+    C += 1
+#end-for
+```
+
+
 &nbsp;
 &nbsp;
 
-#### Step 4: Generate PSSM
+
+#### Step 5 Generate PSSM
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
