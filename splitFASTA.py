@@ -1,6 +1,5 @@
 File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
 
-
 from Bio import SeqIO
 
 C= 1
