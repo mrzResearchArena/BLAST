@@ -31,10 +31,20 @@ COUTION: The download link may not remain same every time, it will change after 
 &nbsp;
 
 #### Step 3: Extract the Non-redundant (NR) Proteins Database:
-```console
-user@machine:~$ tar xvzf nr.*.tar.gz ### If it works, then please don't try the last two.
+
+
+##### Option-1: (Direct) extract from *.tar.gz
+```bash
+for i in $(seq 0 1 38); do
+    if [ $i -lt 10 ]; then
+        tar -xvzf nr.0$i.tar.gz
+    else
+        tar -xvzf nr.$i.tar.gz
+    fi
+done
 ```
 
+##### Option-2: (Indirect) extract from *.tar.gz
 ```console
 user@machine:~$ gunzip nr.*.tar.gz
 ```
@@ -48,6 +58,9 @@ for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
     fi
 done
 ```
+
+&nbsp;
+&nbsp;
 
 #### Step 4: Split FASTAs into Ech Single File:
 
@@ -63,7 +76,6 @@ for record in SeqIO.parse(File, 'fasta'):
     C += 1
 #end-for
 ```
-
 
 &nbsp;
 &nbsp;
