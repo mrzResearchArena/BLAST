@@ -22,7 +22,7 @@ Note: The database has 39 segments, and the initial file size is ~100GB but ~450
 
 ```console
 user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
-user@machine:~$ tar xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz   ### Extract after the downloading the tool.
+user@machine:~$ tar -xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz   ### Extract after the downloading the tool.
 
 COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
 ```
