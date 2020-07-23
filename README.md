@@ -76,6 +76,7 @@ for record in SeqIO.parse(File, 'fasta'):
     C += 1
 #end-for
 ```
+You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
 
 &nbsp;
 &nbsp;
