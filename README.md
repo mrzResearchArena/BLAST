@@ -43,6 +43,7 @@ for i in $(seq 0 1 38); do
     fi
 done
 ```
+**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/directExtract.sh) is the procedure given.
 
 ##### Option-2: (Indirect) extract from *.tar.gz
 ```console
@@ -59,10 +60,12 @@ for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
 done
 ```
 
+**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/indirectExtract.sh) is the procedure given.
+
 &nbsp;
 &nbsp;
 
-#### Step 4: Split FASTAs into Ech Single File:
+#### Step 4: Split FASTAs into Each Single File:
 
 ```python
 File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
@@ -76,7 +79,7 @@ for record in SeqIO.parse(File, 'fasta'):
     C += 1
 #end-for
 ```
-You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
+**Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
 
 &nbsp;
 &nbsp;
@@ -127,3 +130,6 @@ print()
 print('Time elapsed: {} seconds.'.format(end - begin))
 ###
 ```
+
+**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py) is the procedure given.
+
