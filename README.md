@@ -7,7 +7,7 @@ I describe the procedure for the PSSM generation from the FASTA sequences. I spe
 &nbsp;
 &nbsp;
 
-### Step 1: Download the Non-redundant (NR) Proteins Database:
+#### Step 1: Download the Non-redundant (NR) Proteins Database:
 
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
@@ -19,7 +19,7 @@ Note: The database has 39 segments, and the initial file size is ~100GB but ~450
 &nbsp;
 &nbsp;
 
-### Step 2: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
+#### Step 2: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
 
 Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changed over time.
 
@@ -33,10 +33,10 @@ COUTION: The download link may not remain same every time, it will change after 
 &nbsp;
 &nbsp;
 
-### Step 3: Extract the Non-redundant (NR) Proteins Database:
+#### Step 3: Extract the Non-redundant (NR) Proteins Database:
 
 
-#### Option-1: (Direct) extract from *.tar.gz
+##### Option-1: (Direct) extract from *.tar.gz
 ```bash
 for i in $(seq 0 1 38); do
     if [ $i -lt 10 ]; then
@@ -51,7 +51,7 @@ done
 &nbsp;
 &nbsp;
 
-#### Option-2: (Indirect) extract from *.tar.gz
+##### Option-2: (Indirect) extract from *.tar.gz
 ```console
 user@machine:~$ gunzip nr.*.tar.gz
 ```
@@ -71,7 +71,7 @@ done
 &nbsp;
 &nbsp;
 
-### Step 4: Split FASTAs into Each Single File:
+#### Step 4: Split FASTAs into Each Single File:
 
 ```python
 File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
@@ -90,7 +90,7 @@ for record in SeqIO.parse(File, 'fasta'):
 &nbsp;
 &nbsp;
 
-### Step 5 Generate PSSM:
+#### Step 5 Generate PSSM:
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
