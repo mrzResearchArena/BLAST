@@ -138,4 +138,4 @@ print('Time elapsed: {} seconds.'.format(end - begin))
 ###
 ```
 
-**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py) is the procedure given.
+**Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py).
