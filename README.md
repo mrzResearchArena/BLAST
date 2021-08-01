@@ -5,6 +5,13 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 &nbsp;
 &nbsp;
 
+
+### Step 0: Graphical Representation: How can we generate PSSM using asynchronous parallel processing?
+
+<img src="https://github.com/mrzResearchArena/BLAST/blob/master/asyn-PSSM.jpeg" class="center" title="asyn-PSSM" width="650" height="450" />
+
+&nbsp;
+
 ### Step 1: Download the BLAST Tool:
 
 Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changes over time.
