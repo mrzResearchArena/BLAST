@@ -99,7 +99,7 @@ done
 &nbsp;
 &nbsp;
 
-### Step 5: Split Multile FASTA Files into Single FASTA Files:
+### Step 5: Split Multile FASTA File into Single FASTA Files:
 
 ```python
 File = '/home/user/Bioinformatics/multiSequences.fa'
