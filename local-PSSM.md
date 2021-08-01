@@ -1,9 +1,9 @@
 
 # Local PSSM:
 
-### Step 0: Download UniRef Database:
+### Step 0: Download `UniRef` Protein Database:
 
-We can download UniRef database from the given website (https://www.uniprot.org/downloads).
+We can download `UniRef` protein database from the given website (https://www.uniprot.org/downloads).
 
 
 &nbsp;
