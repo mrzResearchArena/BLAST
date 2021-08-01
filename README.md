@@ -146,6 +146,7 @@ for record in SeqIO.parse(File, 'fasta'):
 1. As I rename the sequences, you can track the original sequences.
 
 &nbsp;
+
 **Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/renamedSequencesOrder.py).
 
 &nbsp;
