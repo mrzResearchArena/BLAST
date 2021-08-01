@@ -11,6 +11,7 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 <img src="https://github.com/mrzResearchArena/BLAST/blob/master/asyn-PSSM.jpeg" class="center" title="asyn-PSSM" width="850" height="450" />
 
 &nbsp;
+&nbsp;
 
 ### Step 1: Download the BLAST Tool:
 
@@ -54,7 +55,7 @@ When the `nr` database will be old, no need to download (or upgrade) rather than
 
 &nbsp;
 
-##### Update Process:
+#### Update Process:
 ```console
 user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress nr [*]
 ```
@@ -69,7 +70,7 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 
 ### Step 4: Extract the Non-redundant (NR) Proteins Database:
 
-##### Extract  `*.tar.gz` Files:
+#### Extract  `*.tar.gz` Files:
 ```bash
 n=38   ### If the number of the segment is n, then we will use n-1.
 
@@ -86,10 +87,7 @@ done
 1. A question can arise why I used 38 in the loop? The answer is, I got the 39 segments in the `nr` directory (or folder).
 2. Please make sure that how many segments you have, then update the value of `n`. We can find it from `nr.pal` in `nr` directory (or folder).
 3. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
-
-&nbsp;
-
-**Note:** We will find the update decompress procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/decompress-NR.sh).
+4. We will find the update decompress procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/decompress-NR.sh).
 
 &nbsp;
 &nbsp;
@@ -144,10 +142,7 @@ for record in SeqIO.parse(File, 'fasta'):
 
 ###### Notes:
 1. As I rename the sequences, you can track the original sequences.
-
-&nbsp;
-
-**Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/renamedSequencesOrder.py).
+2. You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/renamedSequencesOrder.py).
 
 &nbsp;
 &nbsp;
@@ -198,8 +193,13 @@ print('Time elapsed: {} seconds.'.format(end - begin))
 ###
 ```
 
-**Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py).
+&nbsp;
+
+###### Notes:
+1. You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py).
 
 &nbsp;
+&nbsp;
+
 
 **Acknowledgement:** I would like to thank you to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
