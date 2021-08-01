@@ -1,6 +1,9 @@
 
 # Local PSSM:
 
+### Step 0: Download UniRef Database:
+
+https://www.uniprot.org/downloads
 
 ### Step 1: Create Local Database:
 
