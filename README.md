@@ -9,12 +9,18 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 
 #### Step 1: Download the Non-redundant (NR) Proteins Database:
 
+We can download the `nr` database from official website (https://ftp.ncbi.nlm.nih.gov/blast/db/), and the downloading processes are given below.
+
+&nbsp;
+
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
+```
+
+&nbsp;
 
 Note: The database has 39 segments, and the initial file size is ~100GB but ~450GB after the extraction. The segments and the file size changes frequently.
-```
 
 &nbsp;
 &nbsp;
