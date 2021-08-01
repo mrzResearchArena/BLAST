@@ -62,9 +62,11 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 
 ### Step 4: Extract the Non-redundant (NR) Proteins Database:
 
-##### Extract `*.tar.gz` Files:
+##### Extract  `*.tar.gz` Files:
 ```bash
-for i in $(seq 0 1 38); do
+n=38   ### If the number of the segment is n, then we will use n-1.
+
+for i in $(seq 0 1 $n); do
     if [ $i -lt 10 ]; then
         tar -xvzf nr.0$i.tar.gz
     else
@@ -78,7 +80,9 @@ done
 2. Please make sure that how many segments you have, then update the value of `n`. We can find it from `nr.pal` in `nr` directory (or folder).
 3. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
 
-**Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/directExtract.sh).
+&nbsp;
+
+**Note:** We will find the update decompress procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/decompress-NR.sh).
 
 &nbsp;
 &nbsp;
