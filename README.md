@@ -8,7 +8,7 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 
 ### Step 0: Graphical Representation: How can we generate PSSM using asynchronous parallel processing?
 
-<img src="https://github.com/mrzResearchArena/BLAST/blob/master/asyn-PSSM.jpeg" class="center" title="asyn-PSSM" width="650" height="450" />
+<img src="https://github.com/mrzResearchArena/BLAST/blob/master/asyn-PSSM.jpeg" class="center" title="asyn-PSSM" width="850" height="450" />
 
 &nbsp;
 
