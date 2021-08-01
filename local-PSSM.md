@@ -55,7 +55,7 @@ for record in SeqIO.parse(File, 'fasta'):
 &nbsp;
 
 
-### Step 3: :
+### Step 3: Implementation/Generate Local PSSMs:
 
 ```python
 import glob
