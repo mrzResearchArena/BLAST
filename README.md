@@ -51,6 +51,7 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 1. The database had 39 segments, and the initial file size was approximately 100GB; we would get around 450GB after extraction (Until 2020).
 2. The database is now 54 segments (Last Update August 1, 2021).
 3. The segments change frequently.
+4. We can get the `update_blastdb.pl` file from BLAST tool.
 
 &nbsp;
 &nbsp;
@@ -67,7 +68,7 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 ```
 
 ###### Notes:
-1. We can get the  `update_blastdb.pl` file from BLAST tool.
+1. We can get the `update_blastdb.pl` file from BLAST tool.
 2. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
 
 
