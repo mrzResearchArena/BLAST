@@ -90,9 +90,9 @@ done
 ### Step 5: Split Multile FASTA Files into Single FASTA Files:
 
 ```python
-File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
+File = '/home/user/Bioinformatics/multiSequences.fa'
 
-from Bio import SeqIO
+from Bio import SeqIO # Install (If you don't have it.): pip install biopython
 
 C= 1
 for record in SeqIO.parse(File, 'fasta'):
