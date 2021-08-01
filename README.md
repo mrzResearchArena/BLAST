@@ -5,28 +5,26 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 &nbsp;
 &nbsp;
 
-#### Step 1: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
+### Step 1: Download the BLAST Tool:
 
-Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changed over time.
+Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changes over time.
 
 &nbsp;
 
 ```console
-user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
-user@machine:~$ tar -xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz   ### Extract after the downloading the tool.
-
-COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
+user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz' ### Fetch from website
+user@machine:~$ tar -xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz                                                           ### Extract the tool after the download
 ```
 
 &nbsp;
 &nbsp;
 
 
-
-#### Step 1: Download the Non-redundant (NR) Proteins Database:
+### Step 2: Download the Non-redundant (NR) Proteins Database:
 
 We can download the `nr` database from official website (https://ftp.ncbi.nlm.nih.gov/blast/db/), and the downloading processes are given below.
 
+&nbsp;
 
 ##### Downloading Process:
 
@@ -44,10 +42,25 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 &nbsp;
 
 
-#### Step X: Update the Non-redundant (NR) Proteins Database:
+### Step 3: Update the Non-redundant (NR) Proteins Database (Optional):
+When the `nr` database will be old, no need to download (or upgrade) rather than update the previous one.
 
-#### Step 3: Extract the Non-redundant (NR) Proteins Database:
+&nbsp;
 
+##### Update Process:
+```console
+user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress nr [*]
+```
+
+##### Notes:
+1. We can get the  `update_blastdb.pl` file from BLAST tool.
+2. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
+
+
+&nbsp;
+&nbsp;
+
+### Step 4: Extract the Non-redundant (NR) Proteins Database:
 
 ##### Option-1: (Direct) extract from *.tar.gz
 ```bash
