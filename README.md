@@ -151,4 +151,6 @@ print('Time elapsed: {} seconds.'.format(end - begin))
 
 **Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py).
 
+&nbsp;
+
 **Acknowledgement:** Thanks to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
