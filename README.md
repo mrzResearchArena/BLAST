@@ -104,6 +104,28 @@ for record in SeqIO.parse(File, 'fasta'):
 
 &nbsp;
 
+###### Notes:
+1. I renamed he origial name of FASTA sequence as it is helpful for tracking the implementation.
+
+
+### Step 6: Rename :
+
+```python
+File = '/home/rafsanjani/Downloads/TS88.fa'
+
+from Bio import SeqIO
+
+C= 1
+
+print('Original-Sequence-Name, Renamed-Sequence, Corresponding-PSSM')
+for record in SeqIO.parse(File, 'fasta'):
+    print('{}, {}.fasta, {}.fasta.pssm'.format(record.id, C, C))
+    C += 1
+#end-for
+```
+
+&nbsp;
+
 **Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
 
 &nbsp;
