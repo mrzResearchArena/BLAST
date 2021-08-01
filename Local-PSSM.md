@@ -23,3 +23,23 @@ Pluto.psq
 Pluto.ptf
 Pluto.pto
 ```
+
+&nbsp;
+&nbsp;
+
+### Step 2: Split Multile FASTA File into Single FASTA Files:
+
+```python
+File = '/home/user/Bioinformatics/multiSequences.fa'
+
+from Bio import SeqIO # Install (If you don't have it.): pip install biopython
+
+C= 1
+for record in SeqIO.parse(File, 'fasta'):
+    openFile = open(str(C) + '.fasta', 'w')
+    SeqIO.write(record, openFile, 'fasta')
+    C += 1
+#end-for
+```
+
+&nbsp;
