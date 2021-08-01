@@ -34,7 +34,7 @@ We can download the `nr` database from official website (https://ftp.ncbi.nlm.ni
 
 &nbsp;
 
-##### Downloading Process:
+#### Downloading Process:
 
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
@@ -113,10 +113,7 @@ for record in SeqIO.parse(File, 'fasta'):
 1. I renamed the origial name of FASTA sequence as it is helpful for tracking the implementation.
 2. I used sequential numerical order rather than the original sequence name.
 3. Renaming the sequence is optional.
-
-&nbsp;
-
-**Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
+4. You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
 
 
 &nbsp;
@@ -147,7 +144,7 @@ for record in SeqIO.parse(File, 'fasta'):
 &nbsp;
 &nbsp;
 
-#### Step 7: Implementation/Generate PSSMs:
+### Step 7: Implementation/Generate PSSMs:
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
