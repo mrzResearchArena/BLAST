@@ -105,10 +105,11 @@ for record in SeqIO.parse(File, 'fasta'):
 &nbsp;
 
 ###### Notes:
-1. I renamed he origial name of FASTA sequence as it is helpful for tracking the implementation.
+1. I renamed the origial name of FASTA sequence as it is helpful for tracking the implementation.
+2. I used sequential numerical order rather than the original sequence name.
+3. Renaming the sequence is optional.
 
-
-### Step 6: Rename :
+### Step 6: S:
 
 ```python
 File = '/home/rafsanjani/Downloads/TS88.fa'
