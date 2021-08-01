@@ -22,5 +22,4 @@ Pluto.pot
 Pluto.psq
 Pluto.ptf
 Pluto.pto
-protein.fa
 ```
