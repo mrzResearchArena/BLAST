@@ -153,4 +153,4 @@ print('Time elapsed: {} seconds.'.format(end - begin))
 
 &nbsp;
 
-**Acknowledgement:** Thanks to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
+**Acknowledgement:** I would like to thank you to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
