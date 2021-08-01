@@ -33,7 +33,7 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 ```
 
-##### Notes:
+###### Notes:
 1. The database had 39 segments, and the initial file size was approximately 100GB; we would get around 450GB after extraction (Until 2020).
 2. The database is now 54 segments (Last Update August 1, 2021).
 3. The segments change frequently.
@@ -52,7 +52,7 @@ When the `nr` database will be old, no need to download (or upgrade) rather than
 user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress nr [*]
 ```
 
-##### Notes:
+###### Notes:
 1. We can get the  `update_blastdb.pl` file from BLAST tool.
 2. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
 
@@ -62,7 +62,7 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 
 ### Step 4: Extract the Non-redundant (NR) Proteins Database:
 
-##### Extract `*.tar.gz` Files
+##### Extract `*.tar.gz` Files:
 ```bash
 for i in $(seq 0 1 38); do
     if [ $i -lt 10 ]; then
@@ -72,11 +72,13 @@ for i in $(seq 0 1 38); do
     fi
 done
 ```
-**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/directExtract.sh) is the procedure given.
 
-##### Notes:
-1. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
-2. 
+###### Notes:
+1. A question can arise why I used 38 in the loop? The answer is, I got the 39 segments in the `nr` directory (or folder).
+2. Please make sure that how many segments you have, then update the value of `n`. We can find it from `nr.pal` in `nr` directory (or folder).
+3. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
+
+**Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/directExtract.sh).
 
 &nbsp;
 &nbsp;
