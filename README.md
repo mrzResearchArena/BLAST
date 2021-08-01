@@ -1,11 +1,27 @@
-## BLAST: Basic Local Alignment Search Tool
+# BLAST: Basic Local Alignment Search Tool
 
 I describe the procedure for the PSSM generation from the FASTA sequences. It is asynchronous parallel processing that can process up to n-sequence at a time. I spend a considerable amount of time on the PSSM generation purpose. It is definitely a hard and tedious procedure, but I make it easy so that other researchers can use it efficiently. People can use it for PSSM generation; unfortunately, I did not check the benchmark yet.
 
-**Note:** Thanks to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
+&nbsp;
+&nbsp;
+
+#### Step 1: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
+
+Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changed over time.
+
+&nbsp;
+
+```console
+user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
+user@machine:~$ tar -xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz   ### Extract after the downloading the tool.
+
+COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
+```
 
 &nbsp;
 &nbsp;
+
+
 
 #### Step 1: Download the Non-redundant (NR) Proteins Database:
 
@@ -27,21 +43,8 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 &nbsp;
 &nbsp;
 
-#### Step 2: Download the BLAST Tool [[Website](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)]:
 
-Please find the latest version of BLAST tool from the given website (https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Then download one of the files as per your operating system (OS) requirement. As I am a Linux OS user, that is why I downloaded "ncbi-blast-...-linux.tar.gz". Please don't worry about the version; it usually changed over time.
-
-&nbsp;
-
-```console
-user@machine:~$ wget 'https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.1+-x64-linux.tar.gz'
-user@machine:~$ tar -xvzf ncbi-blast-2.10.1+-x64-linux.tar.gz   ### Extract after the downloading the tool.
-
-COUTION: The download link may not remain same every time, it will change after the version upgrade. Please make sure your OS and BLAST version from the given website.
-```
-
-&nbsp;
-&nbsp;
+#### Step X: Update the Non-redundant (NR) Proteins Database:
 
 #### Step 3: Extract the Non-redundant (NR) Proteins Database:
 
@@ -147,3 +150,5 @@ print('Time elapsed: {} seconds.'.format(end - begin))
 ```
 
 **Note:** You will find the update procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/asynParallel.py).
+
+**Acknowledgement:** Thanks to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
