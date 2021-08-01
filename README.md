@@ -120,7 +120,8 @@ for record in SeqIO.parse(File, 'fasta'):
 1. I renamed the origial name of FASTA sequence as it is helpful for tracking the implementation.
 2. I used sequential numerical order rather than the original sequence name.
 3. Renaming the sequence is optional.
-4. We can also use Colab for the splitting Multiple FASTA sequence into single sequences [[Update Implementation](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)].
+4. We will find the updatedFASTA splitting procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/splitFASTA.py)
+5. We can also use Colab for the splitting Multiple FASTA sequence into single sequences [[Update Implementation](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)].
 
 
 &nbsp;
