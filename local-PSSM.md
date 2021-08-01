@@ -75,4 +75,4 @@ for file in sorted(glob.glob('*.fasta')):
 &nbsp;
 
 ###### Notes:
-1. We will find the updated FASTA splitting procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/local-PSSM).
+1. We will find the updated FASTA splitting procedure from given [URL](https://github.com/mrzResearchArena/BLAST/blob/master/local-PSSM.py).
