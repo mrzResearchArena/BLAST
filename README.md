@@ -109,7 +109,15 @@ for record in SeqIO.parse(File, 'fasta'):
 2. I used sequential numerical order rather than the original sequence name.
 3. Renaming the sequence is optional.
 
-### Step 6: S:
+&nbsp;
+
+**Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
+
+
+&nbsp;
+&nbsp;
+
+### Step 6: Tracking the Original Sequence Name (Optional):
 
 ```python
 File = '/home/rafsanjani/Downloads/TS88.fa'
@@ -127,12 +135,13 @@ for record in SeqIO.parse(File, 'fasta'):
 
 &nbsp;
 
-**Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
+###### Notes:
+1. As I rename the sequences, you can track the original sequences.
 
 &nbsp;
 &nbsp;
 
-#### Step 5 Generate PSSM:
+#### Step 7: Implementation/Generate PSSMs:
 ```python
 ###
 database = '/home/learning/mrzResearchArena/NR/nr'   # Please, set path where "nr" database directory is located.
