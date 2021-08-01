@@ -8,5 +8,5 @@
 &nbsp;
 
 ```console
-user@machine:~$ 
+user@machine:~$ /home/user/ncbi-blast-2.12.0+/bin/makeblastdb -in protein.fa -dbtype prot -out Pluto -parse_seqids
 ```
