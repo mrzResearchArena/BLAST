@@ -62,7 +62,7 @@ user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress
 
 ### Step 4: Extract the Non-redundant (NR) Proteins Database:
 
-##### Option-1: (Direct) extract from *.tar.gz
+##### Extract `*.tar.gz` Files
 ```bash
 for i in $(seq 0 1 38); do
     if [ $i -lt 10 ]; then
@@ -74,30 +74,14 @@ done
 ```
 **Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/directExtract.sh) is the procedure given.
 
-&nbsp;
-&nbsp;
-
-##### Option-2: (Indirect) extract from *.tar.gz
-```console
-user@machine:~$ gunzip nr.*.tar.gz
-```
-
-```bash
-for i in $(seq 0 1 38); do   ### If segment is n then, the loop goes upto n-1.
-    if [ $i -lt 10 ]; then
-        tar -xvf nr.0$i.tar
-    else
-        tar -xvf nr.$i.tar
-    fi
-done
-```
-
-**Note:** [Here](https://github.com/mrzResearchArena/BLAST/blob/master/indirectExtract.sh) is the procedure given.
+##### Notes:
+1. Plese run the script from the `nr` directory (or folder), otherwise it won't work.
+2. 
 
 &nbsp;
 &nbsp;
 
-#### Step 4: Split FASTAs into Each Single File:
+### Step 5: Split FASTAs into Each Single File:
 
 ```python
 File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
