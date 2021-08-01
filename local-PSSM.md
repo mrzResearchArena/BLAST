@@ -3,7 +3,11 @@
 
 ### Step 0: Download UniRef Database:
 
-https://www.uniprot.org/downloads
+We can download UniRef database from the given website (https://www.uniprot.org/downloads).
+
+
+&nbsp;
+&nbsp;
 
 ### Step 1: Create Local Database:
 
