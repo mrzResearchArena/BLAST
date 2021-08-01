@@ -11,7 +11,6 @@ I describe the procedure for the PSSM generation from the FASTA sequences. It is
 
 We can download the `nr` database from official website (https://ftp.ncbi.nlm.nih.gov/blast/db/), and the downloading processes are given below.
 
-&nbsp;
 
 ##### Download Processes:
 
@@ -20,7 +19,7 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 ```
 
-#### Notes:
+##### Notes:
 1. The database had 39 segments, and the initial file size was ~100GB but ~450GB after the extraction. (Until 2020)
 2. The database is now 54 segments. (Last Update August 1, 2021)
 3. The segments and the file size changes frequently.
