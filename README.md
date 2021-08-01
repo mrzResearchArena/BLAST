@@ -34,12 +34,18 @@ We can download the `nr` database from official website (https://ftp.ncbi.nlm.ni
 
 &nbsp;
 
-#### Downloading Process:
+#### Option-1: Downloading Process:
 
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz.md5'
 ```
+
+#### Option-2: Downloading Process:
+```console
+user@machine:~$ /home/user/ncbi-blast-2.10.1+/bin/update_blastdb.pl --decompress nr [*]
+```
+
 
 ###### Notes:
 1. The database had 39 segments, and the initial file size was approximately 100GB; we would get around 450GB after extraction (Until 2020).
