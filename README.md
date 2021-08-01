@@ -1,6 +1,6 @@
 ## BLAST: Basic Local Alignment Search Tool
 
-I describe the procedure for the PSSM generation from the FASTA sequences. I spend a considerable amount of time on the PSSM generation purpose. It is definitely a hard and tedious procedure, but I make it easy so that other researchers can use it efficiently.
+I describe the procedure for the PSSM generation from the FASTA sequences. It is asynchronous parallel processing that can process up to n-sequence at a time. I spend a considerable amount of time on the PSSM generation purpose. It is definitely a hard and tedious procedure, but I make it easy so that other researchers can use it efficiently. People can use it for PSSM generation; unfortunately, I did not check the benchmark yet.
 
 **Note:** Thanks to Professor [Iman Dehzangi](https://scholar.google.com/citations?user=RkamSRYAAAAJ&hl=en), who helped me initially for the PSSM generation.
 
