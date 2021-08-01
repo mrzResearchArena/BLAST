@@ -87,7 +87,7 @@ done
 &nbsp;
 &nbsp;
 
-### Step 5: Split FASTAs into Each Single File:
+### Step 5: Split Multile FASTA Files into Single FASTA Files:
 
 ```python
 File = '/home/mrz/MyDrive/Education/Bioinformatics/sequences.txt'
@@ -101,6 +101,9 @@ for record in SeqIO.parse(File, 'fasta'):
     C += 1
 #end-for
 ```
+
+&nbsp;
+
 **Note:** You can also use Colab for the splitting FASTA sequences. [[Here is the procedure.](https://github.com/mrzResearchArena/BLAST/blob/master/Split-FASTA-using-BioPython-Colab.ipynb)]
 
 &nbsp;
