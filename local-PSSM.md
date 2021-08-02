@@ -5,20 +5,20 @@
 
 We can download `UniRef` (e.g., UniRef50, UniRef90, UniRef100) protein database from the given website (https://www.uniprot.org/downloads).
 
-&nbsp;
 
+
+#### Download Using `wget` (Copy Download Link from Website):
 ```console
-user@machine:~$ wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/unirefX/unirefX.fasta.gz ### Copy Download Link; (e.g., X = {50, 90, 100})
+user@machine:~$ wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/unirefX/unirefX.fasta.gz   ### (e.g., X = {50, 90, 100})
 ```
 
 &nbsp;
 
 After successfully downloading, we have to uncompress the file.
 
-&nbsp;
-
+#### Uncompress (`unirefX.fasta.gz`):
 ```console
-user@machine:~$ gunzip unirefX.fasta.gz                                                            ### (e.g., X = {50, 90, 100})
+user@machine:~$ gunzip unirefX.fasta.gz   ### (e.g., X = {50, 90, 100})
 ```
 
 
