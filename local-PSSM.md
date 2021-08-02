@@ -8,7 +8,7 @@ We can download `UniRef` (e.g., UniRef50, UniRef90, UniRef100) protein database 
 &nbsp;
 
 ```console
-user@machine:~$ gunzip unirefX.fasta.gz (e.g., X = {50, 90, 100})
+user@machine:~$ gunzip unirefX.fasta.gz   ### (e.g., X = {50, 90, 100})
 ```
 
 
