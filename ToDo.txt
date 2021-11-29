@@ -1,0 +1,6 @@
+Error: When the input cores is greatter than computer cores.
+
+Drawbacks:
+1. Usually the number of core is usually limited, this process is highly depent of computing power.
+2. It might deadlock because each core are using the same database.
+3. Theoritically, the run time is good but in the empirical world, we could not get the same run time what we expected in theoritically. 
